@@ -45,28 +45,28 @@ const perguntas = [
         ]
     },
     {
-        enunciado: "Qual cor de cavalo você acha mais bonita?",
+        enunciado: 'Qual cor de cavalo você acha mais bonita?',
         alternativas: [
             {
-                texto: "Preto",
-                afirmacao: "Elegância pura!",
+                texto: 'Preto',
+                afirmacao: 'Elegância pura!',
             },
             {
-                texto: "Baio (marrom)",
-                afirmacao: "Uma cor clássica e charmosa.",
+                texto: 'Baio (marrom)',
+                afirmacao: 'Uma cor clássica e charmosa.',
             }
         ]
     },
     {
-        enunciado: "Você gostaria de ter um cavalo?",
+        enunciado: 'Você gostaria de ter um cavalo?',
         alternativas: [
             {
-                texto: "Sim, adoraria!",
-                afirmacao: "Com um cavalo, você teria uma ótima companhia.",
+                texto: 'Sim, adoraria!',
+                afirmacao: 'Com um cavalo, você teria uma ótima companhia.',
             },
             {
-                texto: "Não, não sou muito fã.",
-                afirmacao: "Cavalos não são para todos, tudo bem!",
+                texto: 'Não, não sou muito fã.',
+                afirmacao: 'Cavalos não são para todos, tudo bem!',
             }
         ]
     },

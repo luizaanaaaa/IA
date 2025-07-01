@@ -19,20 +19,20 @@ const perguntas = [
         ]
     },
     {
-        enunciado: "Você sabia que eles fazem bem para crianças com deficiência?",
+        enunciado: "Qual sua cor favorita?",
         alternativas: [
             {
-                texto: "Crianças com deficiência podem se beneficiar muito do convívio com animais, tanto em termos de desenvolvimento emocional quanto físico. Cães, gatos, porquinhos-da-índia, coelhos e até peixes podem ser ótimos companheiros e auxiliar no tratamento de diversas condições. A terapia assistida por animais, incluindo a equoterapia, também oferece benefícios significativos. .",
-                afirmacao: "Interessante"
+                texto: "Azul .",
+                afirmacao: "escuro ou claro"
             },
             {
-                texto: ".",
-                afirmacao: ""
+                texto: "Rosa",
+                afirmacao: "escuro ou claro"
             }
         ]
     },
     {
-        enunciado: "Após a elaboração do trabalho escrito, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
+        enunciado: "",
         alternativas: [
             {
                 texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",

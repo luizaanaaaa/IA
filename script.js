@@ -6,67 +6,67 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Você gosta de animais?",
+        enunciado: "Você já montou em um cavalo?",
         alternativas: [
             {
-                texto: "Sim",
-                afirmacao: "Que bom "
+                texto: "Sim, é incrível!",
+                afirmacao: "Você adora cavalos."
             },
             {
-                texto: "Não",
-                afirmacao: "Que pena."
+                texto: "Não, nunca tentei.",
+                afirmacao: "Quem sabe um dia você tenta!"
             }
         ]
     },
     {
-        enunciado: "Qual sua cor favorita?",
+        enunciado: "Qual raça de cavalo você mais gosta?",
         alternativas: [
             {
-                texto: "Azul.",
-                afirmacao: "escuro ou claro"
+                texto: "Puro Sangue Árabe",
+                afirmacao: "Uma raça elegante e veloz!"
             },
             {
-                texto: "Rosa",
-                afirmacao: "escuro ou claro"
+                texto: "Cavalo de Trabalho",
+                afirmacao: "Muito resistente e forte!"
             }
         ]
     },
     {
-        enunciado: "Qual sua estação favorita?",
+        enunciado: "Você prefere cavalos grandes ou pequenos?",
         alternativas: [
             {
-                texto: "Sol",
-                afirmacao: "Praia"
+                texto: "Grandes, imponentes!",
+                afirmacao: "Cavalos grandes têm uma presença impressionante."
             },
             {
-                texto: "Chuva",
-                afirmacao: "Dormir."
+                texto: "Pequenos, ágeis!",
+                afirmacao: "Cavalos pequenos são rápidos e divertidos."
             }
         ]
     },
     {
-        enunciado: "Gosta de ir para escola?",
+        enunciado: "Qual cor de cavalo você acha mais bonita?",
         alternativas: [
             {
-                texto: "Sim.",
-                afirmacao: "Que bom"
+                texto: "Preto",
+                afirmacao: "Elegância pura!"
             },
             {
-                texto: "Não.",
-                afirmacao: "Que pena"
+                texto: "Baio (marrom)",
+                afirmacao: "Uma cor clássica e charmosa."
             }
         ]
     },
     {
-        enunciado: "Você gosta de trabalho em grupo?",
+        enunciado: "Você gostaria de ter um cavalo?",
         alternativas: [
             {
-                texto: "Sim",
-                afirmacao: "Que bom"
+                texto: "Sim, adoraria!",
+                afirmacao: "Com um cavalo, você teria uma ótima companhia."
             },
             {
-                texto: "Não",
-                afirmacao: "Tudo bem!"
+                texto: "Não, não sou muito fã.",
+                afirmacao: "Cavalos não são para todos, tudo bem!"
             }
         ]
     },
@@ -88,36 +88,3 @@ function mostraPergunta() {
         atual++;
         mostraPergunta();
         return;
-    }
-
-    caixaPerguntas.textContent = perguntaAtual.enunciado;
-    caixaAlternativas.textContent = "";
-    mostraAlternativas();
-}
-
-function mostraAlternativas() {
-    for (const alternativa of perguntaAtual.alternativas) {
-        // Check if the alternative has text, otherwise skip
-        if (!alternativa.texto) continue;
-
-        const botaoAlternativas = document.createElement("button");
-        botaoAlternativas.textContent = alternativa.texto;
-        botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa));
-        caixaAlternativas.appendChild(botaoAlternativas);
-    }
-}
-
-function respostaSelecionada(opcaoSelecionada) {
-    const afirmacoes = opcaoSelecionada.afirmacao;
-    historiaFinal += afirmacoes + " ";
-    atual++;
-    mostraPergunta();
-}
-
-function mostraResultado() {
-    caixaPerguntas.textContent = "muito obrigado....";
-    textoResultado.textContent = historiaFinal;
-    caixaAlternativas.textContent = "";
-}
-
-mostraPergunta();

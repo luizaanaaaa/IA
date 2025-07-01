@@ -10,11 +10,11 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Sim, é incrível!",
-                afirmacao: "Você adora cavalos."
+                afirmacao: "Você adora cavalos.",
             },
             {
                 texto: "Não, nunca tentei.",
-                afirmacao: "Quem sabe um dia você tenta!"
+                afirmacao: "Quem sabe um dia você tenta!",
             }
         ]
     },
@@ -23,11 +23,11 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Puro Sangue Árabe",
-                afirmacao: "Uma raça elegante e veloz!"
+                afirmacao: "Uma raça elegante e veloz!",
             },
             {
                 texto: "Cavalo de Trabalho",
-                afirmacao: "Muito resistente e forte!"
+                afirmacao: "Muito resistente e forte!",
             }
         ]
     },
@@ -36,11 +36,11 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Grandes, imponentes!",
-                afirmacao: "Cavalos grandes têm uma presença impressionante."
+                afirmacao: "Cavalos grandes têm uma presença impressionante.",
             },
             {
                 texto: "Pequenos, ágeis!",
-                afirmacao: "Cavalos pequenos são rápidos e divertidos."
+                afirmacao: "Cavalos pequenos são rápidos e divertidos.",
             }
         ]
     },
@@ -49,11 +49,11 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Preto",
-                afirmacao: "Elegância pura!"
+                afirmacao: "Elegância pura!",
             },
             {
                 texto: "Baio (marrom)",
-                afirmacao: "Uma cor clássica e charmosa."
+                afirmacao: "Uma cor clássica e charmosa.",
             }
         ]
     },
@@ -62,11 +62,11 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Sim, adoraria!",
-                afirmacao: "Com um cavalo, você teria uma ótima companhia."
+                afirmacao: "Com um cavalo, você teria uma ótima companhia.",
             },
             {
                 texto: "Não, não sou muito fã.",
-                afirmacao: "Cavalos não são para todos, tudo bem!"
+                afirmacao: "Cavalos não são para todos, tudo bem!",
             }
         ]
     },

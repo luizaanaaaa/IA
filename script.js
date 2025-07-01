@@ -35,25 +35,25 @@ const perguntas = [
         enunciado: "",
         alternativas: [
             {
-                texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-                afirmacao: "Vem impulsionando a inovação na área de IA e luta para abrir novos caminhos profissionais com IA."
+                texto: "sol",
+                afirmacao: "Praia"
             },
             {
-                texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
-                afirmacao: "Sua preocupação com as pessoas motivou a criar um grupo de estudos entre trabalhadores para discutir meios de utilização de IA de forma ética."
+                texto: "chuva",
+                afirmacao: "Dormir."
             }
         ]
     },
     {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
+        enunciado: "Gosta de ir para escola?",
         alternativas: [
             {
-                texto: "Criar uma imagem utilizando uma plataforma de design como o Paint.",
-                afirmacao: "Notou também que muitas pessoas não sabem ainda utilizar as ferramentas tradicionais e decidiu compartilhar seus conhecimentos de design utilizando ferramentas de pintura digital para iniciantes."
+                texto: "sim.",
+                afirmacao: "que bom"
             },
             {
-                texto: "Criar uma imagem utilizando um gerador de imagem de IA.",
-                afirmacao: "Acelerou o processo de criação de trabalhos utilizando geradores de imagem e agora consegue ensinar pessoas que sentem dificuldades em desenhar manualmente como utilizar também!"
+                texto: "não.",
+                afirmacao: "que pena"
             }
         ]
     },

@@ -22,7 +22,7 @@ const perguntas = [
         enunciado: "Qual sua cor favorita?",
         alternativas: [
             {
-                texto: "Azul .",
+                texto: "Azul.",
                 afirmacao: "escuro ou claro"
             },
             {
@@ -32,14 +32,14 @@ const perguntas = [
         ]
     },
     {
-        enunciado: "",
+        enunciado: "Qual sua estação favorita?",
         alternativas: [
             {
-                texto: "sol",
+                texto: "Sol",
                 afirmacao: "Praia"
             },
             {
-                texto: "chuva",
+                texto: "Chuva",
                 afirmacao: "Dormir."
             }
         ]
@@ -48,30 +48,29 @@ const perguntas = [
         enunciado: "Gosta de ir para escola?",
         alternativas: [
             {
-                texto: "sim.",
-                afirmacao: "que bom"
+                texto: "Sim.",
+                afirmacao: "Que bom"
             },
             {
-                texto: "não.",
-                afirmacao: "que pena"
+                texto: "Não.",
+                afirmacao: "Que pena"
             }
         ]
     },
     {
-        enunciado: "Você gosta de trbalho em grupo? ",
+        enunciado: "Você gosta de trabalho em grupo?",
         alternativas: [
             {
-                texto: "sim",
-                afirmacao: "que bom"
+                texto: "Sim",
+                afirmacao: "Que bom"
             },
             {
-                texto: "",
-                afirmacao: " "
+                texto: "Não",
+                afirmacao: "Tudo bem!"
             }
         ]
     },
 ];
-
 
 let atual = 0;
 let perguntaAtual;
@@ -83,13 +82,24 @@ function mostraPergunta() {
         return;
     }
     perguntaAtual = perguntas[atual];
+
+    // Skip empty questions
+    if (!perguntaAtual.enunciado) {
+        atual++;
+        mostraPergunta();
+        return;
+    }
+
     caixaPerguntas.textContent = perguntaAtual.enunciado;
     caixaAlternativas.textContent = "";
     mostraAlternativas();
 }
 
-function mostraAlternativas(){
-    for(const alternativa of perguntaAtual.alternativas) {
+function mostraAlternativas() {
+    for (const alternativa of perguntaAtual.alternativas) {
+        // Check if the alternative has text, otherwise skip
+        if (!alternativa.texto) continue;
+
         const botaoAlternativas = document.createElement("button");
         botaoAlternativas.textContent = alternativa.texto;
         botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa));
